@@ -8,7 +8,6 @@ export const Practice1 = () => {
     <div>
       <p>練習問題1：引数の型指定</p>
       <button onClick={onClickPractice}>練習問題1を実行</button>
-      <p>{}</p>
     </div>
   );
 };
