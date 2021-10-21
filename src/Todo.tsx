@@ -1,3 +1,7 @@
+import { TodoType } from "./types/todo";
+
+export const Todo = (props: Omit<TodoType, "id">) => {
+  // export const Todo = (props: Pick<TodoType, "userId" | "title" | "completed">) => {
 type TodoType = {
   userId: number;
   title: string;

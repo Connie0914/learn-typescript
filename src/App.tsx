@@ -1,5 +1,8 @@
 import axios from "axios";
 import { useState } from "react";
+import "./styles.css";
+import { Todo } from "./Todo";
+import { TodoType } from "./types/todo";
 import { Practice1 } from "./Practices/Practice1";
 import { Practice2 } from "./Practices/Practice2";
 import { Practice3 } from "./Practices/Practice3";
@@ -32,6 +35,7 @@ export default function App() {
       <button onClick={onClickFetchData}>データ取得</button>
       {todos.map((todo) => (
         <Todo
+          key={todo.id}
           title={todo.title}
           userId={todo.userId}
           completed={todo.completed}
