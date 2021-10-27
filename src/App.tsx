@@ -4,6 +4,18 @@ import "./styles.css";
 import { Todo } from "./Todo";
 import { Text } from "./Text";
 import { TodoType } from "./types/todo";
+import { Practice1 } from "./Practices/Practice1";
+import { Practice2 } from "./Practices/Practice2";
+import { Practice3 } from "./Practices/Practice3";
+import { Practice4 } from "./Practices/Practice4";
+import "./styles.css";
+import { Todo } from "./Todo";
+
+type TodoType = {
+  userId: number;
+  title: string;
+  completed: boolean;
+};
 
 export default function App() {
   const [todos, setTodos] = useState<Array<TodoType>>([]);
